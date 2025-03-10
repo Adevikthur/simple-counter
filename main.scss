@@ -3,4 +3,50 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px transparent solid;
+
+    &:hover{
+        cursor: pointer;
+        background-color: darkgray;
+        color: white;
+    }
+    &:active{
+        cursor: pointer;
+        background-color: gray;
+        color: white;
+    }
+}
+.counter {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+
+    &__display {
+        font-size: 48px;
+        font-weight: 600;
+        color: black;
+    }
+
+    &__controls{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
 }

@@ -11,13 +11,14 @@
 
 <body>
     <div class="counter">
+        <h2>Simple Counter</h2>
         <div class="counter__display">
-            <h1 class="counter__number" id="counterNumber">0</h1>
+            <h1 class="counter__number" id="counter-number">0</h1>
         </div>
         <div class="counter__controls">
-            <button class="btn btn--add" id="addButton">Add</button>
-            <button class="btn btn--reset" id="resetButton">Reset</button>
-            <button class="btn btn--subtract" id="subtractButton">Subtract</button>
+            <button class="btn btn--add" id="add-btn" onclick="add()">INCREASE</button>
+            <button class="btn btn--reset" id="reset-btn" onclick="reset()">RESET</button>
+            <button class="btn btn--subtract" id="subtract-btn" onclick="subtract()">DECREASE</button>
         </div>
     </div>
 <!-- Script Tag -->
